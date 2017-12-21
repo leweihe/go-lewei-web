@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/Unknwon/macaron"
 	"log"
 	"net/http"
+	"gopkg.in/macaron.v1"
 )
 
 func main() {
