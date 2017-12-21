@@ -1,0 +1,30 @@
+<html>
+<head>
+
+    <title>go-lewei-web</title>
+</head>
+
+<body>
+{{/*you cannot see it in the web browser*/}}
+<div>
+    lewei-go-web first html
+</div>
+<div>
+    {{if .}}
+    score is {{.}}
+    {{else}}
+    no score set
+    {{end}}
+</div>
+
+<div>
+    {{if gt . 90}}
+    good
+    {{else if gt . 80}}
+    middle
+    {{else}}
+    bad
+    {{end}}
+</div>
+</body>
+</html>

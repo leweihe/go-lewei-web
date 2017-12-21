@@ -1,0 +1,35 @@
+<html>
+<head>
+
+    <title>go-lewei-web</title>
+</head>
+
+<body>
+{{/*you cannot see it in the web browser*/}}
+<div>
+    lewei-go-web first html
+</div>
+<div>
+    {{.Header.Get "User-Agent"}}
+</div>
+<div>
+
+    {{range $key, $val := .Header}}
+    key : {{$key}} value : {{$key}}
+    <br/>
+
+    {{end}}
+</div>
+
+<div>
+    {{.URL.Scheme}}
+    {{.URL.User}}
+
+    {{with .URL}}
+        {{.Scheme}}
+        {{.User}}
+        {{.Host}}
+    {{end}}
+</div>
+</body>
+</html>
